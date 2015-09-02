@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 prime_quickfire_02
+  ul#contents
+    each student in students
+      - var firstName = student.firstName
+      - var lastName = student.lastName
+
+
