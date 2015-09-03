@@ -14,9 +14,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-  console.log('in students post ', req.body.firstName);
+  console.log('in students post ', req.body);
   var studentsArray = students;
-  console.log(students);
+  //console.log(students);
 
   var firstName = req.body.firstName;
   var lastName = req.body.lastName;
