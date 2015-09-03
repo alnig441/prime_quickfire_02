@@ -8,13 +8,13 @@ var file = path.join(__dirname, '../models/students.json');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  console.log('in students get router', res) ;
+  console.log('in students get router') ;
   //res.render(students);
-  res.send({"student":students});
+  res.send(students);
 });
 
-router.post('/', function(req,res,next){
-
+router.post('/', function(req, res, next){
+  console.log('in students post ', req.body.firstName);
   var studentsArray = students;
   console.log(students);
 

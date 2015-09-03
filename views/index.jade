@@ -1,10 +1,11 @@
 extends layout
 
 block content
-  h1 prime_quickfire_02
   ul#contents
-    each student in students
-      - var firstName = student.firstName
-      - var lastName = student.lastName
-
+    - var lastName = student.lastName
+    - console.log(lastName)
+    each students in student
+      - var firstName = students.firstName
+      - var lastName = students.lastName
+      li= firstName+' '+lastName
 
